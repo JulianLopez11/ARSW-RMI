@@ -30,6 +30,18 @@ De manera similar, para ejecutar el cliente debe ejecutar desde la consola el si
 java -cp . -Djava.rmi.server.codebase=file:/<pathToClasses>/ -Djava.security.policy=file:/<pathToPolicy>/policy rmiexample.EchoClient
 ```
 
+### Instalación
+---
+
+1. Clonar el repositorio a la maquina local:
+   ```bash
+    git clone <URL_DEL_REPOSITORIO>
+    ```
+2. Navegar al directorio del repositorio
+    ```bash
+    cd <NOMBRE_DEL_PROYECTO>
+    ```
+    
 ## 💻 Forma de ejecución chat
 
 1. Abriendo dos terminales en nuestro dispositivo primero compilaremos el proyecto con:
