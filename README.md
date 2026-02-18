@@ -1,12 +1,11 @@
-# ARSW-RMI
+# 👁️ ARSW-RMI
 # Escuela Colombiana de Ingeniería – Arquitecturas de Software  
 
 RMI utiliza un mecanismo basado en stubs y skeletons para implementar la comunicación entre objetos remotos. El mecanismo tiene un funcionamiento básico en el cual el cliente invoca un método en el stub (que es un objeto local), y es este el encargado de hacer la invocación del método en el objeto remoto.
 
-**Figura 7: Modelo de comunicación RMI**
-
 Este mecanismo oculta la complejidad de la comunicación remota. El stub es el encargado de serializar (preparar para transmitirlos) los parámetros que se envían al objeto remoto. Igualmente, el stub se encarga de recibir la respuesta del llamado remoto y deserializarla para que pueda ser manejada por los objetos locales. La función del skeleton es muy similar a la del stub pero del lado del servidor. El skeleton espera por el llamado remoto, recibe los parámetros, realiza el llamado al método necesario y retorna el valor que regresa el método.
-## Formas de ejecución
+
+## 💻 Formas de ejecución
 
 Lo primero es iniciar el servidor de nombres donde se registrarán los objetos que prestan servicios remotos. Este servicio se iniciará en el puerto 23000 y los debe ejecutar desde la raíz del classpath (es decir desde el directorio donde el registry puede encontrar las definiciones de clase):
 
@@ -31,7 +30,7 @@ De manera similar, para ejecutar el cliente debe ejecutar desde la consola el si
 java -cp . -Djava.rmi.server.codebase=file:/<pathToClasses>/ -Djava.security.policy=file:/<pathToPolicy>/policy rmiexample.EchoClient
 ```
 
-## Forma de ejecución chat
+## 💻 Forma de ejecución chat
 
 1. Abriendo dos terminales en nuestro dispositivo primero compilaremos el proyecto con:
 
@@ -67,11 +66,11 @@ java -cp . -Djava.rmi.server.codebase=file:/<pathToClasses>/ -Djava.security.pol
 
     Puerto remoto: 6000
 ```
-### Evidencia chat
+### 📷 Evidencia chat
 
 ![alt text](docs/img/chat.png)
 ---
 
-## Autor
+## 🙋 Autor
 
 * **Julian Camilo Lopez Barrero** - [JulianLopez11](https://github.com/JulianLopez11)
